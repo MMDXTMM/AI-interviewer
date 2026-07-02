@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ResumePilot AI | 简历面试智能评估平台</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ResumePilot AI">
+        <span class="brand-mark">R</span>
+        <span>
+          <strong>ResumePilot AI</strong>
+          <small>Interview Intelligence</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#features">功能</a>
+        <a href="#dashboard">产品</a>
+        <a href="#benefits">优势</a>
+        <a href="#pricing">方案</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="ghost-button">登录</button>
+        <a class="primary-link" href="#dashboard">开始使用</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <div class="signal-pill">
+            <span></span>
+            AI Resume Screening & Mock Interview Scoring
+          </div>
+          <h1>用 AI 面试官重构简历筛选与面试训练</h1>
+          <p>
+            深度解析 PDF / Word 简历，模拟大厂面试官连续追问，对候选人的项目能力、技术深度、表达质量和进面概率进行量化评估。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link large" href="#dashboard">立即体验</a>
+            <button id="sampleBtn" type="button" class="glass-button large">载入示例</button>
+          </div>
+          <div class="hero-metrics" aria-label="产品指标">
+            <div><strong>100</strong><span>能力评分维度</span></div>
+            <div><strong>PDF</strong><span>Word 简历解析</span></div>
+            <div><strong>AI</strong><span>追问与改进建议</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-grid">
+            <div class="visual-card main-scan">
+              <div class="scan-header">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="scan-title">Candidate Signal Map</div>
+              <div class="scan-ring">
+                <span>86</span>
+              </div>
+              <div class="scan-bars">
+                <i style="--h: 72%"></i>
+                <i style="--h: 45%"></i>
+                <i style="--h: 88%"></i>
+                <i style="--h: 63%"></i>
+                <i style="--h: 78%"></i>
+              </div>
+            </div>
+            <div class="visual-card floating-card top-card">
+              <small>Project Depth</small>
+              <strong>High</strong>
+              <span class="mini-line"></span>
+            </div>
+            <div class="visual-card floating-card bottom-card">
+              <small>Interview Risk</small>
+              <strong>12%</strong>
+              <span class="mini-line reverse"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="content-section">
+        <div class="section-heading">
+          <span class="eyebrow">Core Features</span>
+          <h2>从简历到面试表现的完整评估链路</h2>
+          <p>覆盖简历解析、进面判断、面试题生成、作答评分和改进建议。</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>多格式简历解析</h3>
+            <p>支持 PDF、DOCX、TXT 和 Markdown，自动提取项目、技术栈、量化成果与风险表述。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>进面概率评估</h3>
+            <p>基于岗位、级别、项目含金量和证据密度生成综合评分与面试准入判断。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>大厂面试官追问</h3>
+            <p>围绕简历中的真实项目设计基础、架构、异常场景、复盘和压力追问。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">04</span>
+            <h3>答案评分与反馈</h3>
+            <p>候选人可逐题作答，系统从完整度、结构、证据、深度和复盘意识进行评分。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">05</span>
+            <h3>简历改进路径</h3>
+            <p>当候选人不够资格进面时，输出可执行的项目补强、表达改写和技术栈提升建议。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">06</span>
+            <h3>本地安全运行</h3>
+            <p>文件解析在本机服务中完成，适合个人求职训练、团队内推筛选和面试辅导场景。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="dashboard" class="dashboard-section">
+        <div class="section-heading compact">
+          <span class="eyebrow">Live Dashboard</span>
+          <h2>上传简历，立即生成面试评估面板</h2>
+          <p>这是可交互的真实产品界面，不是静态截图。</p>
+        </div>
+
+        <div class="app-shell">
+          <section class="workspace glass-panel">
+            <div class="section-title">
+              <div>
+                <span class="eyebrow">Candidate Intake</span>
+                <h2>候选人资料</h2>
+              </div>
+              <span class="status-dot">Local AI Runtime</span>
+            </div>
+
+            <section class="controls" aria-label="候选人和岗位设置">
+              <label>
+                目标岗位
+                <input id="targetRole" type="text" value="后端开发工程师" autocomplete="off">
+              </label>
+              <label>
+                面试级别
+                <select id="level">
+                  <option>校招</option>
+                  <option selected>1-3年</option>
+                  <option>3-5年</option>
+                  <option>5年以上</option>
+                </select>
+              </label>
+              <label>
+                面试风格
+                <select id="style">
+                  <option selected>大厂一面：项目和基础</option>
+                  <option>大厂二面：系统设计和深挖</option>
+                  <option>HR面：动机和稳定性</option>
+                  <option>综合压力面</option>
+                </select>
+              </label>
+            </section>
+
+            <section class="input-panel">
+              <div class="upload-band">
+                <div>
+                  <h2>导入或粘贴简历</h2>
+                  <p>支持 PDF、DOCX、TXT、Markdown。系统会提取文本并生成进面判断、面试题和作答评分。</p>
+                </div>
+                <label class="file-button">
+                  导入简历
+                  <input id="fileInput" type="file" accept=".txt,.md,.text,.pdf,.docx,.doc,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword">
+                </label>
+              </div>
+
+              <textarea id="resumeText" spellcheck="false" placeholder="粘贴简历文本，或导入 PDF / Word / TXT / Markdown 简历。建议包含：教育经历、实习/工作经历、项目经历、技术栈、成果指标、奖项/论文/开源链接。"></textarea>
+
+              <div class="actions">
+                <button id="analyzeBtn" type="button">开始解析并模拟面试</button>
+                <button id="clearBtn" type="button" class="secondary">清空</button>
+              </div>
+            </section>
+          </section>
+
+          <aside class="result-panel glass-panel" aria-live="polite">
+            <div class="score-strip">
+              <div>
+                <span class="eyebrow">Interview Readiness</span>
+                <strong id="decision">待解析</strong>
+                <p>综合评估岗位匹配、项目含金量、量化证据和表达风险。</p>
+              </div>
+              <div class="score-ring" id="scoreRing">--</div>
+            </div>
+
+            <nav class="tabs" aria-label="结果视图">
+              <button class="tab active" data-tab="summary" type="button">解析</button>
+              <button class="tab" data-tab="questions" type="button">面试题</button>
+              <button class="tab" data-tab="advice" type="button">改进</button>
+              <button class="tab" data-tab="prompt" type="button">Agent 提示词</button>
+            </nav>
+
+            <section id="summary" class="tab-panel active"></section>
+            <section id="questions" class="tab-panel"></section>
+            <section id="advice" class="tab-panel"></section>
+            <section id="prompt" class="tab-panel"></section>
+          </aside>
+        </div>
+      </section>
+
+      <section id="benefits" class="content-section benefits-section">
+        <div class="section-heading">
+          <span class="eyebrow">Benefits</span>
+          <h2>为求职训练和人才筛选提速</h2>
+        </div>
+        <div class="benefit-grid">
+          <div class="benefit-item">
+            <strong>效率</strong>
+            <p>从简历导入到首轮面试题生成，数秒完成基础筛选和训练准备。</p>
+          </div>
+          <div class="benefit-item">
+            <strong>智能</strong>
+            <p>问题不再来自通用题库，而是围绕简历证据和岗位要求生成。</p>
+          </div>
+          <div class="benefit-item">
+            <strong>安全</strong>
+            <p>本地解析简历文件，适合处理敏感候选人材料和内部面试训练。</p>
+          </div>
+          <div class="benefit-item">
+            <strong>可扩展</strong>
+            <p>可继续接入真实大模型、企业题库、岗位 JD 和候选人数据库。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="cta-section">
+        <div>
+          <span class="eyebrow">Ready to Launch</span>
+          <h2>把简历评估流程升级为可量化的 AI 面试系统</h2>
+          <p>适合个人求职、职业辅导、内推筛选和招聘团队的面试前评估。</p>
+        </div>
+        <div class="cta-actions">
+          <a class="primary-link large" href="#dashboard">开始体验</a>
+          <a class="glass-link large" href="#features">查看功能</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 ResumePilot AI</span>
+      <span>Built for intelligent resume screening and interview simulation.</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
